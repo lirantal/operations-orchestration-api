@@ -7,7 +7,7 @@
 /**
  * Module dependencies.
  */
-var Should 	= require('should');
+var should 	= require('should');
 var OO 		= require('../index');
 
 var options = {
@@ -15,13 +15,6 @@ var options = {
 	password: 'admin',
 	baseUrl: 'http://my-oo-host.com:8050/oo/rest/v1'
 };
-
-
-// OO.dashboard.statistics(function(err, body) {
-// 	console.log(err);
-// 	console.log(body);
-// });
-
 
 describe('Operations Orchestration API - Test Suite', function() {
 
@@ -120,10 +113,6 @@ describe('Operations Orchestration API - Test Suite', function() {
 
 		});
 
-
-
 	});
-
-
 
 });
