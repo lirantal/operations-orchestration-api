@@ -1,10 +1,10 @@
 {
   "name": "operations-orchestration-api",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "HPE's Operations Orchestration (OO) client API module for NodeJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/test.js"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,10 @@
   "dependencies": {
     "lodash": "^3.10.1",
     "request": "^2.65.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "nock": "^3.3.2",
+    "should": "^7.1.1"
   }
 }
