@@ -7,8 +7,9 @@
 /**
  * Module dependencies.
  */
-var should 	= require('should');
-var OO 		= require('../index');
+var should 		= require('should');
+var OO 			= require('../index');
+var apiMocks 	= require('./apiMocks')();
 
 var options = {
 	username: 'admin',
@@ -19,6 +20,7 @@ var options = {
 describe('Operations Orchestration API - Test Suite', function() {
 
 	describe('API Setup', function () {
+
 		it('API credentials and baseUrl should be set and returned back correctly', function() {
 
 			var result = OO.setClient(options);
@@ -115,4 +117,31 @@ describe('Operations Orchestration API - Test Suite', function() {
 
 	});
 
+	describe('Dashboard API', function () {
+
+		it('dashboard.statistics API should statistics object', function(done) {
+
+			OO.setClient(options);
+
+			OO.dashboard.statistics(function(err, body) {
+				should.not.exist(err);
+				body.should.be.instanceof(Array);
+
+				var stat = body[0];
+
+				stat.flowUuid.should.be.instanceof(String).and.not.empty();
+				stat.flowPath.should.be.instanceof(String).and.not.empty();
+				stat.flowRoi.should.be.instanceof(Number).and.be.ok();
+				stat.numberOfExecutions.should.be.instanceof(Number).and.be.ok();
+				stat.averageExecutionTime.should.be.instanceof(Number).and.be.ok();
+				stat.resultsDistribution.should.be.instanceof(Array);
+				
+				return done();
+			});
+
+		});
+
+	});
+
 });
+
