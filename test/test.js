@@ -119,7 +119,7 @@ describe('Operations Orchestration API - Test Suite', function() {
 
 	describe('Dashboard API', function () {
 
-		it('dashboard.statistics API should statistics object', function(done) {
+		it('dashboard.statistics API should return a valid statistics object', function(done) {
 
 			OO.setClient(options);
 
@@ -135,7 +135,7 @@ describe('Operations Orchestration API - Test Suite', function() {
 				stat.numberOfExecutions.should.be.instanceof(Number).and.be.ok();
 				stat.averageExecutionTime.should.be.instanceof(Number).and.be.ok();
 				stat.resultsDistribution.should.be.instanceof(Array);
-				
+
 				return done();
 			});
 
