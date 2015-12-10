@@ -143,5 +143,95 @@ describe('Operations Orchestration API - Test Suite', function() {
 
 	});
 
+	describe('Executions API', function () {
+
+		it('executions.executeFlow API should return an object for successful flow execution', function(done) {
+
+			OO.setClient(options);
+
+			var flow = {
+				uuid: '06fe8531-868b-4e79-aa7a-13a5e30a66ec',
+				inputs: {
+					min: '0',
+					max: '10'
+				}
+			};
+
+			OO.executions.executeFlow(flow, function(err, body) {
+				should.not.exist(err);
+
+				body.should.be.instanceof(Object);
+
+				body.feedUrl.should.be.instanceof(String).and.not.empty();
+				body.executionId.should.be.instanceof(String).and.not.empty();
+				body.errorCode.should.be.instanceof(String).and.not.empty();
+				
+				return done();
+			});
+
+		});
+
+	});
+
+	describe('Configurations API', function () {
+
+		it('config.getAllItems API should return an array with config items objects', function(done) {
+
+			OO.setClient(options);
+
+			OO.config.getAllItems(function(err, body) {
+				should.not.exist(err);
+
+				body.should.be.instanceof(Array);
+				body.should.have.lengthOf(2);
+
+				var configItem = body[0];
+
+				configItem.type.should.be.instanceof(String).and.not.empty();
+				configItem.path.should.be.instanceof(String).and.not.empty();
+				configItem.name.should.be.instanceof(String).and.not.empty();
+				configItem.value.should.be.instanceof(String);
+				configItem.defaultValue.should.be.instanceof(String);
+				configItem.customValue.should.be.instanceof(String);
+				configItem.fullPath.should.be.instanceof(String).and.not.empty();
+				configItem.uuid.should.be.instanceof(String).and.not.empty();
+
+
+				return done();
+			});
+
+		});
+
+		it('config.setItemAPI should return a config object after successfully setting its value', function(done) {
+
+			OO.setClient(options);
+
+			var configItem = {
+				type: 'group-aliases',
+			    path: 'RAS_Operator_Path',
+			    value: 'RAS_Operator_Path',
+			};
+
+			OO.config.setItem(configItem, function(err, body) {
+				should.not.exist(err);
+
+				body.should.be.instanceof(Object);
+
+				body.type.should.be.instanceof(String).and.not.empty();
+				body.path.should.be.instanceof(String).and.not.empty();
+				body.name.should.be.instanceof(String).and.not.empty();
+				body.value.should.be.instanceof(String).and.not.empty();
+				body.customValue.should.be.instanceof(String);
+				body.fullPath.should.be.instanceof(String).and.not.empty();
+				body.uuid.should.be.instanceof(String).and.not.empty();
+				
+				return done();
+			});
+
+		});
+
+	});
+
 });
+
 
