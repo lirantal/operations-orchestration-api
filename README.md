@@ -3,6 +3,7 @@
 [![npm module downloads](http://img.shields.io/npm/dt/operations-orchestration-api.svg)](https://www.npmjs.org/package/operations-orchestration-api)
 [![Dependency Status](https://david-dm.org/lirantal/operations-orchestration-api.svg)](https://david-dm.org/lirantal/operations-orchestration-api)
 [![Build](https://travis-ci.org/lirantal/operations-orchestration-api.svg?branch=master)](https://travis-ci.org/lirantal/operations-orchestration-api)
+[![Coverage Status](https://coveralls.io/repos/lirantal/operations-orchestration-api/badge.svg?branch=master&service=github)](https://coveralls.io/github/lirantal/operations-orchestration-api?branch=master)
 
 # operations-orchestration-api
 HPE's Operations Orchestration client API module for NodeJS 
