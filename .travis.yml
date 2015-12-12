@@ -19,3 +19,5 @@ addons:
     - g++-4.8
     - gcc-4.8
     - clang
+after_script:
+  - npm run-script coverage
