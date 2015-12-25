@@ -173,6 +173,40 @@ describe('Operations Orchestration API - Test Suite', function() {
 
 	});
 
+	describe('Schedules API', function () {
+
+		it('schedules.scheduleFlow API should create a scheduled flow and return an object for successful scheduling', function(done) {
+
+			OO.setClient(options);
+
+			var flow = {
+				uuid: '0a8f3175-d71e-4426-b578-1ace1fe1d898',
+				inputs: {
+					host: '127.0.0.1',
+					port: '22',
+					username: 'root',
+					password: 'root',
+					protocol: 'ssh',
+					command: 'ps',
+				}
+			};
+
+			OO.schedules.scheduleFlow(flow, function(err, body) {
+				should.not.exist(err);
+
+				body.should.be.instanceof(Object);
+
+				body.id.should.be.instanceof(String).and.not.empty();
+				body.flowUuid.should.be.instanceof(String).and.not.empty();
+				body.triggerExpression.should.be.instanceof(String).and.not.empty();
+				
+				return done();
+			});
+
+		});
+
+	});
+
 	describe('Configurations API', function () {
 
 		it('config.getAllItems API should return an array with config items objects', function(done) {

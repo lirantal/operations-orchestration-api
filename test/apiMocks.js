@@ -30,6 +30,29 @@ var apiMocks = function() {
   		});
 
   	nock('http://my-oo-host.com:8050/oo/rest/v1')
+		.post('/schedules')
+		.reply(201, {
+			'id': '1347298851037',
+			'flowScheduleName': 'Scheduled Flow Created By REST',
+			'flowUuid': 'c34de7d6-14cc-4a1c-b25e-85afbb064359',
+			'triggerExpression': '*/60000',
+			'startDate': 1314079869000,
+			'endDate': 1491302669536,
+			'username': 'DavisJ',
+			'numOfOccurrences': 5,
+			'runLogLevel': 'DEBUG',
+			'timeZone': 'Asia/Amman',
+			'nextFireTime': null,
+			'prevFireTime': null,
+			'enabled': false,
+			'inputPromptUseBlank': false,
+			'inputs': {
+				'input1': 'value for input1',
+				'input2': 'value for inputn'
+			}
+  		});
+
+  	nock('http://my-oo-host.com:8050/oo/rest/v1')
 		.get('/config-items')
 		.reply(200, [
 			{
