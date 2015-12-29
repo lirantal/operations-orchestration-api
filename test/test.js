@@ -180,14 +180,21 @@ describe('Operations Orchestration API - Test Suite', function() {
 			OO.setClient(options);
 
 			var flow = {
-				uuid: '0a8f3175-d71e-4426-b578-1ace1fe1d898',
-				inputs: {
-					host: '127.0.0.1',
-					port: '22',
-					username: 'root',
-					password: 'root',
-					protocol: 'ssh',
-					command: 'ps',
+				'flowUuid': '0a8f3175-d71e-4426-b578-1ace1fe1d898',
+				'flowScheduleName': 'Scheduled Flow Created By REST 2',
+				'triggerExpression': '* 10 10 * * *',
+				'runLogLevel': 'DEBUG',
+				"startDate": '1314079869000',
+				"username": 'admin',
+				"inputPromptUseBlank": true,
+				"timeZone": "Asia/Amman",
+				'inputs': {
+					'host': '127.0.0.1',
+					'port': '22',
+					'username': 'root',
+					'password': 'root',
+					'protocol': 'ssh',
+					'command': 'ps',
 				}
 			};
 
