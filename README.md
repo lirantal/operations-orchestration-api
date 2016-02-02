@@ -60,6 +60,9 @@ OO.config.getAllItems(function(err, data) {
 });
 ```
 
+# References
+[Operations Orchestration product resources on HPE Live Network](https://hpln.hp.com/group/operations-orchestration)
+[Operations Orchestration API Guide](https://hpln.hpe.com/node/21991)
 
 
 # Author
