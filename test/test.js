@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 /**
  * Tests resource
  * @module tests
