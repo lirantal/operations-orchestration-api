@@ -30,7 +30,7 @@
     "istanbul": "^0.4.1",
     "mocha": "^2.3.4",
     "mocha-lcov-reporter": "^1.0.0",
-    "nock": "^3.3.2",
-    "should": "^7.1.1"
+    "nock": "^7.4.0",
+    "should": "^10.0.0"
   }
 }
