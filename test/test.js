@@ -256,7 +256,7 @@ describe('Operations Orchestration API - Test Suite', function() {
 				"customValue": "RAS_Operator_Path",
 				"fullPath": "Configuration/Group Aliases/RAS_Operator_Path.xml",
 				"uuid": "5233030c-af46-432b-a682-b326ca6bf2ae"
-			}
+			};
 
 			OO.config.setItem(configItem, function(err, body) {
 				should.not.exist(err);
