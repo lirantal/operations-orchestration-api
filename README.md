@@ -18,25 +18,25 @@ npm install operations-orchestration-api --save
 # Setup as easy as 1-2-3
 1. Require the module
 
-```javascript
-var OO = require('operations-orchestration-api');
-```
+    ```javascript
+    var OO = require('operations-orchestration-api');
+    ```
 
 2. Create an options object with the `username`, and `password` that are allowed to query the REST API, as well as the `baseUrl` property for the full URL where the OO REST API is available
 
-```javascript
-var options = {
-	username: 'admin',
-	password: 'admin',
-	baseUrl: 'http://localhost:8050/oo/rest/v1'
-};
-```
+    ```javascript
+    var options = {
+    	username: 'admin',
+    	password: 'admin',
+    	baseUrl: 'http://localhost:8050/oo/rest/v1'
+    };
+    ```
 
 3. Initialize the OO object with the options
 
-```javascript
-OO.setClient(options);
-```
+    ```javascript
+    OO.setClient(options);
+    ```
 
 # Usage
 After the OO module is initialized with the correct options, we can begin querying information.
