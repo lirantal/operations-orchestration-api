@@ -22,15 +22,15 @@
   "author": "Liran Tal <liran.tal@gmail.com> (http://www.enginx.com)",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.0.0",
-    "request": "^2.65.0"
+    "lodash": "^4.16.2",
+    "request": "^2.75.0"
   },
   "devDependencies": {
     "coveralls": "^2.11.6",
     "istanbul": "^0.4.4",
-    "mocha": "^3.0.1",
-    "mocha-lcov-reporter": "^1.0.0",
+    "mocha": "^3.1.0",
+    "mocha-lcov-reporter": "^1.2.0",
     "nock": "^8.0.0",
-    "should": "^10.0.0"
+    "should": "^11.1.0"
   }
 }
