@@ -4,6 +4,9 @@
 [![Dependency Status](https://david-dm.org/lirantal/operations-orchestration-api.svg)](https://david-dm.org/lirantal/operations-orchestration-api)
 [![Build](https://travis-ci.org/lirantal/operations-orchestration-api.svg?branch=master)](https://travis-ci.org/lirantal/operations-orchestration-api)
 [![Coverage Status](https://coveralls.io/repos/lirantal/operations-orchestration-api/badge.svg?branch=master&service=github)](https://coveralls.io/github/lirantal/operations-orchestration-api?branch=master)
+[![bitHound Code](https://www.bithound.io/github/lirantal/operations-orchestration-api/badges/code.svg)](https://www.bithound.io/github/lirantal/operations-orchestration-api)
+[![bitHound Overall Score](https://www.bithound.io/github/lirantal/operations-orchestration-api/badges/score.svg)](https://www.bithound.io/github/lirantal/operations-orchestration-api)
+
 
 # operations-orchestration-api
 HPE's Operations Orchestration client API module for NodeJS 
