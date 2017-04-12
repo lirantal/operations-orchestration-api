@@ -8,7 +8,7 @@
  * Module dependencies.
  */
 var should 		= require('should');
-var OO 			= require('../index');
+var OO 			= require('../lib/main');
 var apiMocks 	= require('./apiMocks')();
 
 var options = {
@@ -123,21 +123,22 @@ describe('Operations Orchestration API - Test Suite', function() {
 
 			OO.setClient(options);
 
-			OO.dashboard.statistics(function(err, body) {
-				should.not.exist(err);
-				body.should.be.instanceof(Array);
+			OO.dashboard
+				.statistics()
+				.then(function(body) {
+					body.should.be.instanceof(Array);
 
-				var stat = body[0];
+					var stat = body[0];
 
-				stat.flowUuid.should.be.instanceof(String).and.not.empty();
-				stat.flowPath.should.be.instanceof(String).and.not.empty();
-				stat.flowRoi.should.be.instanceof(Number).and.be.ok();
-				stat.numberOfExecutions.should.be.instanceof(Number).and.be.ok();
-				stat.averageExecutionTime.should.be.instanceof(Number).and.be.ok();
-				stat.resultsDistribution.should.be.instanceof(Array);
+					stat.flowUuid.should.be.instanceof(String).and.not.empty();
+					stat.flowPath.should.be.instanceof(String).and.not.empty();
+					stat.flowRoi.should.be.instanceof(Number).and.be.ok();
+					stat.numberOfExecutions.should.be.instanceof(Number).and.be.ok();
+					stat.averageExecutionTime.should.be.instanceof(Number).and.be.ok();
+					stat.resultsDistribution.should.be.instanceof(Array);
 
-				return done();
-			});
+					return done();
+				});
 
 		});
 
@@ -157,17 +158,17 @@ describe('Operations Orchestration API - Test Suite', function() {
 				}
 			};
 
-			OO.executions.executeFlow(flow, function(err, body) {
-				should.not.exist(err);
+			OO.executions
+				.executeFlow(flow)
+				.then(function(body) {
+					body.should.be.instanceof(Object);
 
-				body.should.be.instanceof(Object);
-
-				body.feedUrl.should.be.instanceof(String).and.not.empty();
-				body.executionId.should.be.instanceof(String).and.not.empty();
-				body.errorCode.should.be.instanceof(String).and.not.empty();
-				
-				return done();
-			});
+					body.feedUrl.should.be.instanceof(String).and.not.empty();
+					body.executionId.should.be.instanceof(String).and.not.empty();
+					body.errorCode.should.be.instanceof(String).and.not.empty();
+					
+					return done();
+				});
 
 		});
 
@@ -198,17 +199,17 @@ describe('Operations Orchestration API - Test Suite', function() {
 				}
 			};
 
-			OO.schedules.scheduleFlow(flow, function(err, body) {
-				should.not.exist(err);
+			OO.schedules
+				.scheduleFlow(flow)
+				.then(function(body) {
+					body.should.be.instanceof(Object);
 
-				body.should.be.instanceof(Object);
-
-				body.id.should.be.instanceof(String).and.not.empty();
-				body.flowUuid.should.be.instanceof(String).and.not.empty();
-				body.triggerExpression.should.be.instanceof(String).and.not.empty();
-				
-				return done();
-			});
+					body.id.should.be.instanceof(String).and.not.empty();
+					body.flowUuid.should.be.instanceof(String).and.not.empty();
+					body.triggerExpression.should.be.instanceof(String).and.not.empty();
+					
+					return done();
+				});
 
 		});
 
@@ -220,27 +221,27 @@ describe('Operations Orchestration API - Test Suite', function() {
 
 			OO.setClient(options);
 
-			OO.config.getAllItems(function(err, body) {
-				should.not.exist(err);
+			OO.config
+				.getAllItems()
+				.then(function(body) {
 
-				body.should.be.instanceof(Array);
-				body.should.have.lengthOf(2);
+					body.should.be.instanceof(Array);
+					body.should.have.lengthOf(2);
 
-				var configItem = body[0];
+					var configItem = body[0];
 
-				configItem.type.should.be.instanceof(String).and.not.empty();
-				configItem.path.should.be.instanceof(String).and.not.empty();
-				configItem.name.should.be.instanceof(String).and.not.empty();
-				configItem.value.should.be.instanceof(String);
-				configItem.defaultValue.should.be.instanceof(String);
-				configItem.customValue.should.be.instanceof(String);
-				configItem.fullPath.should.be.instanceof(String).and.not.empty();
-				configItem.uuid.should.be.instanceof(String).and.not.empty();
+					configItem.type.should.be.instanceof(String).and.not.empty();
+					configItem.path.should.be.instanceof(String).and.not.empty();
+					configItem.name.should.be.instanceof(String).and.not.empty();
+					configItem.value.should.be.instanceof(String);
+					configItem.defaultValue.should.be.instanceof(String);
+					configItem.customValue.should.be.instanceof(String);
+					configItem.fullPath.should.be.instanceof(String).and.not.empty();
+					configItem.uuid.should.be.instanceof(String).and.not.empty();
 
 
-				return done();
-			});
-
+					return done();
+				});
 		});
 
 		it('config.setItemAPI should return a config object after successfully setting its value', function(done) {
@@ -258,21 +259,21 @@ describe('Operations Orchestration API - Test Suite', function() {
 				"uuid": "5233030c-af46-432b-a682-b326ca6bf2ae"
 			};
 
-			OO.config.setItem(configItem, function(err, body) {
-				should.not.exist(err);
+			OO.config
+				.setItem(configItem)
+				.then(function(body) {
+					body.should.be.instanceof(Object);
 
-				body.should.be.instanceof(Object);
-
-				body.type.should.be.instanceof(String).and.not.empty();
-				body.path.should.be.instanceof(String).and.not.empty();
-				body.name.should.be.instanceof(String).and.not.empty();
-				body.value.should.be.instanceof(String).and.not.empty();
-				body.customValue.should.be.instanceof(String);
-				body.fullPath.should.be.instanceof(String).and.not.empty();
-				body.uuid.should.be.instanceof(String).and.not.empty();
-				
-				return done();
-			});
+					body.type.should.be.instanceof(String).and.not.empty();
+					body.path.should.be.instanceof(String).and.not.empty();
+					body.name.should.be.instanceof(String).and.not.empty();
+					body.value.should.be.instanceof(String).and.not.empty();
+					body.customValue.should.be.instanceof(String);
+					body.fullPath.should.be.instanceof(String).and.not.empty();
+					body.uuid.should.be.instanceof(String).and.not.empty();
+					
+					return done();
+				});
 
 		});
 
