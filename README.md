@@ -47,20 +47,24 @@ After the OO module is initialized with the correct options, we can begin queryi
 ## Statistics
 The following example will query for the statistics, and you can inspect the `err` or `data` object for the returned result.
 ```javascript
-OO.dashboard.statistics(function(err, data) {
-	console.log(err);
-	console.log(data);
-});
+try {
+    const data = await OO.dashboard.statistics(); // Throws err if Promise got rejected
+    console.log(data);
+} catch (err) {
+    console.log(err);
+}
 ```
 ## Configuration
 ### Getting all configuration items in OO
 The `data` object will contain an array of objects with all the config-items set in OO
 
 ```javascript
-OO.config.getAllItems(function(err, data) {
-	console.log(err);
-	console.log(data);
-});
+try {
+    const data = await OO.config.getAllItems(); // Throws err if Promise got rejected
+    console.log(data);
+} catch (err) {
+    console.log(err);
+}
 ```
 
 # References
