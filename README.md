@@ -67,6 +67,18 @@ try {
 }
 ```
 
+# Versions and Node.js support
+
+Version 2.x has been updated to employ Promises functionality based on async/await, and as such requires a current Node.js release.
+
+Version compatibility matrix for this library:
+
+| OO API Library version | Node.js support | Comments
+| ---------------------- | --------------- | --------
+| v1.x | Node.js 4.x, 5.x, 6.x, 7.x        | based on callbacks, for example: `OO.dashboard.statistics(function(err, data) {  console.log(data); });`
+| v2.x | Node.js >= 7.8.x |
+
+
 # References
 1. [Operations Orchestration product resources on HPE Live Network](https://hpln.hp.com/group/operations-orchestration)
 2. [Operations Orchestration API Guide](https://hpln.hpe.com/node/21991)
