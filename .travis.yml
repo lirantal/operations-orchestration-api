@@ -19,3 +19,5 @@ before_script:
   - snyk test
 after_script:
   - npm run-script coverage
+after_success:
+  - snyk monitor
