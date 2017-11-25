@@ -9,6 +9,8 @@
 
 
 # operations-orchestration-api
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/lirantal/operations-orchestration-api.svg)](https://greenkeeper.io/)
 HPE's Operations Orchestration client API module for NodeJS 
 
 # Install
