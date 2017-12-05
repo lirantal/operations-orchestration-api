@@ -1,6 +1,6 @@
 {
   "name": "operations-orchestration-api",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "HPE's Operations Orchestration (OO) client API module for NodeJS",
   "main": "./lib/main.js",
   "scripts": {
