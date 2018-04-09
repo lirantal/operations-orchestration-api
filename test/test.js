@@ -206,7 +206,7 @@ describe('Operations Orchestration API - Test Suite', function () {
         configItem.defaultValue.should.be.instanceof(String)
         configItem.customValue.should.be.instanceof(String)
         configItem.fullPath.should.be.instanceof(String).and.not.empty()
-        configItem.uuid.should.be.instanceof(String).and.not.empty()
+        configItem.FlowUuid.should.be.instanceof(String).and.not.empty()
 
         return done()
       })
@@ -237,7 +237,7 @@ describe('Operations Orchestration API - Test Suite', function () {
         body.value.should.be.instanceof(String).and.not.empty()
         body.customValue.should.be.instanceof(String)
         body.fullPath.should.be.instanceof(String).and.not.empty()
-        body.uuid.should.be.instanceof(String).and.not.empty()
+        body.FlowUuid.should.be.instanceof(String).and.not.empty()
 
         return done()
       })
