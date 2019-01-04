@@ -1,11 +1,9 @@
 [![view on npm](http://img.shields.io/npm/v/operations-orchestration-api.svg)](https://www.npmjs.org/package/operations-orchestration-api)
 [![view on npm](http://img.shields.io/npm/l/operations-orchestration-api.svg)](https://www.npmjs.org/package/operations-orchestration-api)
 [![npm module downloads](http://img.shields.io/npm/dt/operations-orchestration-api.svg)](https://www.npmjs.org/package/operations-orchestration-api)
-[![Dependency Status](https://david-dm.org/lirantal/operations-orchestration-api.svg)](https://david-dm.org/lirantal/operations-orchestration-api)
+[![Known Vulnerabilities](https://snyk.io/test/github/lirantal/operations-orchestration-api/badge.svg?targetFile=package.json)](https://snyk.io/test/github/lirantal/operations-orchestration-api?targetFile=package.json)
 [![Build](https://travis-ci.org/lirantal/operations-orchestration-api.svg?branch=master)](https://travis-ci.org/lirantal/operations-orchestration-api)
 [![Coverage Status](https://coveralls.io/repos/lirantal/operations-orchestration-api/badge.svg?branch=master&service=github)](https://coveralls.io/github/lirantal/operations-orchestration-api?branch=master)
-[![bitHound Code](https://www.bithound.io/github/lirantal/operations-orchestration-api/badges/code.svg)](https://www.bithound.io/github/lirantal/operations-orchestration-api)
-[![bitHound Overall Score](https://www.bithound.io/github/lirantal/operations-orchestration-api/badges/score.svg)](https://www.bithound.io/github/lirantal/operations-orchestration-api)
 [![Security Responsible Disclosure](https://img.shields.io/badge/Security-Responsible%20Disclosure-yellow.svg)](https://github.com/nodejs/security-wg/blob/master/processes/responsible_disclosure_template.md)
 
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat)](https://github.com/semantic-release/semantic-release)
