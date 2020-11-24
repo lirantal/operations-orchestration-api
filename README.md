@@ -6,9 +6,7 @@
 [![Coverage Status](https://coveralls.io/repos/lirantal/operations-orchestration-api/badge.svg?branch=master&service=github)](https://coveralls.io/github/lirantal/operations-orchestration-api?branch=master)
 [![Security Responsible Disclosure](https://img.shields.io/badge/Security-Responsible%20Disclosure-yellow.svg)](https://github.com/nodejs/security-wg/blob/master/processes/responsible_disclosure_template.md)
 
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat)](https://github.com/semantic-release/semantic-release)
-[![Greenkeeper badge](https://badges.greenkeeper.io/lirantal/operations-orchestration-api.svg)](https://greenkeeper.io/)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![operations-orchestration-api](https://snyk.io/advisor/npm-package/operations-orchestration-api/badge.svg)](https://snyk.io/advisor/npm-package/operations-orchestration-api)
 
 # operations-orchestration-api
 
