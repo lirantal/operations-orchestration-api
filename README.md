@@ -1,7 +1,6 @@
 [![view on npm](http://img.shields.io/npm/v/operations-orchestration-api.svg)](https://www.npmjs.org/package/operations-orchestration-api)
 [![view on npm](http://img.shields.io/npm/l/operations-orchestration-api.svg)](https://www.npmjs.org/package/operations-orchestration-api)
 [![npm module downloads](http://img.shields.io/npm/dt/operations-orchestration-api.svg)](https://www.npmjs.org/package/operations-orchestration-api)
-[![Known Vulnerabilities](https://snyk.io/test/github/lirantal/operations-orchestration-api/badge.svg?targetFile=package.json)](https://snyk.io/test/github/lirantal/operations-orchestration-api?targetFile=package.json)
 [![Build](https://travis-ci.org/lirantal/operations-orchestration-api.svg?branch=master)](https://travis-ci.org/lirantal/operations-orchestration-api)
 [![Coverage Status](https://coveralls.io/repos/lirantal/operations-orchestration-api/badge.svg?branch=master&service=github)](https://coveralls.io/github/lirantal/operations-orchestration-api?branch=master)
 [![Security Responsible Disclosure](https://img.shields.io/badge/Security-Responsible%20Disclosure-yellow.svg)](https://github.com/nodejs/security-wg/blob/master/processes/responsible_disclosure_template.md)
