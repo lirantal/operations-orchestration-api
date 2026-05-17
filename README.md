@@ -84,6 +84,10 @@ Version compatibility matrix for this library:
 2. [Operations Orchestration API Guide](https://hpln.hpe.com/node/21991)
 
 
+## Contributing
+
+Please consult [CONTRIBUTING](./CONTRIBUTING.md) for guidelines on contributing to this project.
+
 # Author
 Liran Tal <liran.tal@gmail.com>
 
