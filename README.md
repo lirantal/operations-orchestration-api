@@ -5,7 +5,6 @@
 [![Coverage Status](https://coveralls.io/repos/lirantal/operations-orchestration-api/badge.svg?branch=master&service=github)](https://coveralls.io/github/lirantal/operations-orchestration-api?branch=master)
 [![Security Responsible Disclosure](https://img.shields.io/badge/Security-Responsible%20Disclosure-yellow.svg)](https://github.com/nodejs/security-wg/blob/master/processes/responsible_disclosure_template.md)
 
-[![operations-orchestration-api](https://snyk.io/advisor/npm-package/operations-orchestration-api/badge.svg)](https://snyk.io/advisor/npm-package/operations-orchestration-api)
 
 # operations-orchestration-api
 
