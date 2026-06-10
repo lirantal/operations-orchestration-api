@@ -1,4 +1,8 @@
 {
+  "publishConfig": {
+    "provenance": true,
+    "access": "public"
+  },
   "name": "operations-orchestration-api",
   "version": "0.0.0-development",
   "description": "HPE's Operations Orchestration (OO) client API module for NodeJS",
