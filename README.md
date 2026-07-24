@@ -3,7 +3,6 @@
 [![npm module downloads](http://img.shields.io/npm/dt/operations-orchestration-api.svg)](https://www.npmjs.org/package/operations-orchestration-api)
 <a href="https://github.com/lirantal/operations-orchestration-api/actions/workflows/ci.yml"><img src="https://github.com/lirantal/operations-orchestration-api/actions/workflows/ci.yml/badge.svg?branch=master" alt="build"/></a>
 [![Coverage Status](https://coveralls.io/repos/lirantal/operations-orchestration-api/badge.svg?branch=master&service=github)](https://coveralls.io/github/lirantal/operations-orchestration-api?branch=master)
-[![Security Responsible Disclosure](https://img.shields.io/badge/Security-Responsible%20Disclosure-yellow.svg)](https://github.com/nodejs/security-wg/blob/master/processes/responsible_disclosure_template.md)
 
 
 # operations-orchestration-api
