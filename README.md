@@ -78,8 +78,8 @@ Version compatibility matrix for this library:
 
 
 # References
-1. [Operations Orchestration product resources on HPE Live Network](https://hpln.hp.com/group/operations-orchestration)
-2. [Operations Orchestration API Guide](https://hpln.hpe.com/node/21991)
+1. Operations Orchestration product resources on HPE Live Network, historical href: https://hpln.hp.com/group/operations-orchestration
+2. Operations Orchestration API Guide, historical hrf: https://hpln.hpe.com/node/21991
 
 
 ## Contributing
