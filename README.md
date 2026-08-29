@@ -2,7 +2,7 @@
 [![view on npm](http://img.shields.io/npm/l/operations-orchestration-api.svg)](https://www.npmjs.org/package/operations-orchestration-api)
 [![npm module downloads](http://img.shields.io/npm/dt/operations-orchestration-api.svg)](https://www.npmjs.org/package/operations-orchestration-api)
 <a href="https://github.com/lirantal/operations-orchestration-api/actions/workflows/ci.yml"><img src="https://github.com/lirantal/operations-orchestration-api/actions/workflows/ci.yml/badge.svg?branch=master" alt="build"/></a>
-[![Coverage Status](https://coveralls.io/repos/lirantal/operations-orchestration-api/badge.svg?branch=master&service=github)](https://coveralls.io/github/lirantal/operations-orchestration-api?branch=master)
+[![codecov](https://codecov.io/gh/lirantal/operations-orchestration-api/graph/badge.svg?token=bSY9xWQdkJ)](https://codecov.io/gh/lirantal/operations-orchestration-api)
 
 
 # operations-orchestration-api
@@ -78,8 +78,8 @@ Version compatibility matrix for this library:
 
 
 # References
-1. Operations Orchestration product resources on HPE Live Network, historical href: https://hpln.hp.com/group/operations-orchestration
-2. Operations Orchestration API Guide, historical hrf: https://hpln.hpe.com/node/21991
+1. Operations Orchestration product resources on HPE Live Network, historical href: `https://hpln dot hp dot com/group/operations-orchestration`
+2. Operations Orchestration API Guide, historical href: `https://hpln dot hpe dot com/node/21991`
 
 
 ## Contributing
