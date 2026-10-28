@@ -38,3 +38,4 @@ jobs:
           poll-interval-seconds: "60"
           timeout-seconds: "3600"
           ignored-check-names: Automerge
+          github-token: ${{ secrets.AUTOMERGE_TOKEN || github.token }}
